@@ -1,0 +1,69 @@
+[
+  {
+    "category": "music",
+    "list": [
+      { "word": "How deep is your love", "hint": "Classic love song" },
+      { "word": "On the wings of love", "hint": "Movie theme love song" },
+      { "word": "Jose Marie Chan", "hint": "Christmas Song Artist" },
+      { "word": "Ed Sheeran", "hint": "Uk Song Artist" },
+      { "word": "Brown Eyes", "hint": "Hollywood Song" },
+      { "word": "Thinking out loud", "hint": "Uk Song Artist" },
+      { "word": "Carpenters", "hint": "Classic Song Group" },
+      { "word": "Secret Love Song", "hint": "Infedelity Song" },
+      { "word": "I wanna dance with somebody", "hint": "Witney Houston Song" },
+      {
+        "word": "I wont last a day without you",
+        "hint": "Classic 80's love song"
+      }
+    ]
+  },
+  {
+    "category": "movie",
+    "list": [
+      { "word": "Harry Potter and the Chambers of Secrets", "hint": "Magic" },
+      { "word": "Avengers Infinity Wars", "hint": "Super Heroes" },
+      { "word": "Resident Evil Apocalipse", "hint": "Survival Horror" },
+      { "word": "Final Fantasy the Spirit Within", "hint": "Movie from game" },
+      { "word": "The hills have eyes", "hint": "Suspense, thrillers, Gross" },
+      { "word": "Jurassic World", "hint": "Prehistoric" },
+      { "word": "Terminator Rise of the Machine", "hint": "Futuristic" },
+      { "word": "Train to Busan", "hint": "Horror Drama Zombies" },
+      { "word": "Rurouni Kenshin Kyoto Inferno", "hint": "Live action anime" },
+      { "word": "Batman Returns", "hint": "Super heroes" },
+      { "word": "Star Wars the last Jedi", "hint": "Futuristic Space action" }
+    ]
+  },
+  {
+    "category": "country",
+    "list": [
+      { "word": "Greenland", "hint": "Europe" },
+      { "word": "Philippines", "hint": "Asia" },
+      { "word": "Afghanistan", "hint": "Middle East" },
+      { "word": "Antigua and Barbuda", "hint": "Carribean Area" },
+      { "word": "Bangladesh", "hint": "India area" },
+      { "word": "Costa Rica", "hint": "Latin area" },
+      { "word": "North Korea", "hint": "Loves to nuke" },
+      { "word": "Equador", "hint": "Center" },
+      { "word": "Finland", "hint": "Nokia phone maker" },
+      { "word": "Lithuania", "hint": "Eurasia area" },
+      { "word": "Netherlands", "hint": "Always neutral" }
+    ]
+  },
+  {
+    "category": "animals",
+    "list": [
+      { "word": "Panther", "hint": "Cat family" },
+      { "word": "Whale Sharks", "hint": "Sea creatures" },
+      { "word": "Loxodonta africana", "hint": "Species of elephant" },
+      { "word": "American black bear", "hint": "Grizzly" },
+      { "word": "Bison", "hint": "Huge speciy of mammals" },
+      { "word": "Elephant", "hint": "Huge speciy of mammals" },
+      { "word": "Saber Tooth Tiger", "hint": "From cat family" },
+      { "word": "caiman", "hint": "Speciy of alligator" },
+      { "word": "Komodo Dragon", "hint": "Speciy of alligator" },
+      { "word": "Chimpanzee", "hint": "Intelligent animal" },
+      { "word": "Peacock", "hint": "Beautiful feather bird" },
+      { "word": "Great White Shark", "hint": "Beast in the sea" }
+    ]
+  }
+]
