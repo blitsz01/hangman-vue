@@ -4,7 +4,7 @@
   "description": "A Vue.js project",
   "author": "blitsz01 <blitsz01@gmail.com>",
   "private": true,
-  "homepage": "https://github.com/blitsz01/hangman-vue",
+  "homepage": "git@github.com:blitsz01/hangman-vue",
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
