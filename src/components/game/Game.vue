@@ -10,7 +10,7 @@
   <h3 class="textStyle">Category : {{chosenCategory}}</h3>
   <b-row>
     <b-col  cols="3">
-      <noose :tries="lives" />
+      <noose :tries="lives" :winOrLoose="flagResult"/>
     </b-col>
     <b-col  cols="9">
       <guessWord  v-if="chosenCategory" :showHint="showHint" :itemLetters="letters" :item="currentWord" :itemHint="hint" />
@@ -36,6 +36,7 @@ export default {
       word: null,
       hint: null,
       lives: 0,
+      flagResult: null,
       showHint: false
     };
   },
@@ -47,10 +48,10 @@ export default {
       this.$refs.modalCategory.hide();
     },
     checkWin: function() {
-      if (this.currentWord.indexOf("-") === -1) {
-        alert("You Won!");
-      } else if (this.lives === 0) {
-        alert("You Lost!");
+      if (this.currentWord.indexOf("-") === -1 && this.lives > 0) {
+        this.flagResult = 1;
+      } else if (this.lives === 0 && this.currentWord.indexOf("-") !== -1) {
+        this.flagResult = 0;
       }
     }
   },
@@ -70,6 +71,7 @@ export default {
       this.word = index.word.toUpperCase();
       this.hint = index.hint.toUpperCase();
       this.currentWord = "";
+      this.flagResult = null;
       this.lives = 7;
       for (var i = 0; i <= index.word.length - 1; i++) {
         if (index.word[i] !== " ") this.currentWord += "-";
@@ -91,9 +93,7 @@ export default {
       } else {
         this.lives--;
       }
-      if (this.lives >= 0) {
-        this.checkWin();
-      }
+      this.checkWin();
     });
     EventBus.$on("displayHint", isVisible => {
       this.lives--;

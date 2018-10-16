@@ -1,8 +1,9 @@
 <template>
     <div>
         <div class="sideDiv">Number of Trie's : 
-          <span v-if="tries >= 1"><b>{{tries}}</b></span>
-          <span v-else><b>Game Over!</b></span>
+          <span v-if="winOrLoose === 1"><b>Congratualations, You Won!</b></span>
+          <span v-else-if="winOrLoose === 0"><b>Game Over!</b></span>
+          <span v-else><b>{{tries}}</b></span>
           <img id="imgMan" :src="getImgUrl(tries)" v-bind:alt="tries">
         </div>
     </div>
@@ -10,7 +11,7 @@
 
 <script>
 export default {
-  props: ["tries"],
+  props: ["tries", "winOrLoose"],
   name: "Noose",
   methods: {
     getImgUrl: function(tries) {

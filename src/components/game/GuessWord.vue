@@ -36,7 +36,7 @@ export default {
 <style>
 .divKeyboard {
   margin: auto;
-  width: 50%;
+  width: 100%;
   border: 3px solid grey;
   padding: 5px;
   text-align: center;
